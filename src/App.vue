@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- {{ this.fizzbuzz }} -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+// import { run } from "./fizzbuzz";
+import { run } from "./bowlingScore";
 
 export default {
   name: "app",
+  // data: () => {
+    // return {
+    //   fizzbuzz: ""
+    // };
+  // },
   components: {
-    HelloWorld
+    // HelloWorld
+  },
+  created() {
+    run();
   }
 };
 </script>
